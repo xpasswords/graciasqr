@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Game</title>
+            <!-- Lato -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- Qwitcher -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="page1">
+        <h1 class="qwit">Gracias!</h1>
+        <p class="small-text">Escaneaste el código QR!!!<br>
+        Espero que te diviertas mucho, <br>y que me mandes un mensaje de Whatsapp ;)</p>
+        <p class="lato">Empezamos?</p>
+        <button onclick="goToPage2()">Sí</button>
+    </div>
+
+    <div class="container hidden" id="page2">
+        <p class="lato">Primero vamos a tener que confirmar que seas vos.<br>
+        Debes ingresar la palabra clave que te dí.<br>Tal vez esta frase sea de ayuda:</p>
+        <p class="montserrat small-text">"El orden nos hace comprender el caos"</p>
+        <input type="text" id="password" placeholder="PALABRA CLAVE">
+        <button onclick="checkPassword()">Enviar</button>
+        <p id="errorMessage" class="red-text hidden">Por favor no te rindas, estás cerca!<br>los puntos marcan el orden,<br>Ej: la F tiene el primer lugar.</p>
+    </div>
+
+    <div class="container hidden" id="page3">
+        <h1 class="qwit"> Felicitaciones!</h1>
+        <p class="small-text">Sabía que lo conseguirías!</p>
+        <p class="small-text">Ahora viene el gran desafío:</p>
+        <p class="montserrat small-text">Poder descifrar el verdadero significado de un sueño<br>es tan probable como ganarse la QUINIELA.</p>
+        
+
+        <button onclick="sueno()">ir al sueño</button>
+    </div>
+
+    <!-- Error pages for incorrect passwords -->
+    <div class="container hidden" id="pageWrongOrder">
+        <p class="negrita">Las letras son correctas!</p>
+        <p class="lato">pero no la palabra que forman.<br>Es una palabra de 10 letras.</p>
+        <p class="lato">Tal vez esta frase sea de ayuda:</p>
+        <p class="montserrat">"El orden nos hace comprender el caos"</p>
+        <button onclick="retryPassword()">Volver a intentar</button>
+    </div>
+
+    <div class="container hidden" id="pageIncorrect">
+        <p class="lato">La contraseña es incorrecta.<br>Es una palabra de 10 letras, sin números o símbolos.<br>No te rindas, estás cerca!</p>
+        <p class="lato">Tal vez esta frase sea de ayuda:</p>
+        <p class="montserrat">"El orden nos hace comprender el caos"</p>
+        <button onclick="retryPassword()">Volver a intentar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

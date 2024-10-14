@@ -1,0 +1,75 @@
+
+body {
+    background-color: #f3eeeb;
+    font-family: 'Lato', sans-serif;
+    color: #727D71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+
+    .montserrat-<montserrat small-text> {
+    font-family: "montserrat small-text", sans-serif;
+    color: #727D71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-optical-sizing: auto;
+    font-weight: <100>;
+    font-style:italic;
+
+}
+
+}
+
+.qwit {
+  font-family: "Qwitcher Grypen", cursive;
+    font-style: normal;
+        font-size: 100px;
+
+}
+
+.montserrat {
+    text-align: center;
+    font-style: italic;
+}
+
+.negrita {
+    font-family: 'Lato', sans-serif;
+  color: #727D71;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    background-color: #727D71;
+    color: #f3eeeb;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input {
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}
+
+.red-text {
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+      font-style:italic;
+}

@@ -22,6 +22,7 @@
 <body>
     <div class="container" id="page1">
         <h1 class="qwit">Gracias!</h1>
+        <img src="iso.jpg" alt="Imagen centrada">
         <p class="small-text">Escaneaste el código QR!!!<br>
         Espero que te diviertas mucho, <br>y que me mandes un mensaje de Whatsapp ;)</p>
         <p class="lato">Empezamos?</p>
@@ -29,6 +30,7 @@
     </div>
 
     <div class="container hidden" id="page2">
+      <img src="iso.jpg" alt="Imagen centrada">
         <p class="lato">Primero vamos a tener que confirmar que seas vos.<br>
         Debes ingresar la palabra clave que te dí.<br>Tal vez esta frase sea de ayuda:</p>
         <p class="montserrat small-text">"El orden nos hace comprender el caos"</p>
@@ -38,17 +40,19 @@
     </div>
 
     <div class="container hidden" id="page3">
-        <h1 class="qwit"> Felicitaciones!</h1>
+        <h1 class="qwitb">   Felicitaciones!</h1>
+        <img src="iso.jpg" alt="Imagen centrada">
         <p class="small-text">Sabía que lo conseguirías!</p>
         <p class="small-text">Ahora viene el gran desafío:</p>
         <p class="montserrat small-text">Poder descifrar el verdadero significado de un sueño<br>es tan probable como ganarse la QUINIELA.</p>
-        
+
 
         <button onclick="sueno()">ir al sueño</button>
     </div>
 
     <!-- Error pages for incorrect passwords -->
     <div class="container hidden" id="pageWrongOrder">
+      <img src="iso.jpg" alt="Imagen centrada">
         <p class="negrita">Las letras son correctas!</p>
         <p class="lato">pero no la palabra que forman.<br>Es una palabra de 10 letras.</p>
         <p class="lato">Tal vez esta frase sea de ayuda:</p>
@@ -57,9 +61,10 @@
     </div>
 
     <div class="container hidden" id="pageIncorrect">
+      <img src="iso.jpg" alt="Imagen centrada">
         <p class="lato">La contraseña es incorrecta.<br>Es una palabra de 10 letras, sin números o símbolos.<br>No te rindas, estás cerca!</p>
         <p class="lato">Tal vez esta frase sea de ayuda:</p>
-        <p class="montserrat">"El orden nos hace comprender el caos"</p>
+        <p class="montserrat">"El QR está abrazado por las letras<br>que forman la palabra"</p>
         <button onclick="retryPassword()">Volver a intentar</button>
     </div>
 
